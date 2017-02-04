@@ -10,11 +10,13 @@
 		D02E54C71E43D748008A0BB2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D02E54C61E43D748008A0BB2 /* main.m */; };
 		D02E54CA1E43D748008A0BB2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D02E54C91E43D748008A0BB2 /* AppDelegate.m */; };
 		D02E54CD1E43D748008A0BB2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D02E54CC1E43D748008A0BB2 /* ViewController.m */; };
-		D02E54D01E43D748008A0BB2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D02E54CE1E43D748008A0BB2 /* Main.storyboard */; };
+		D02E54D01E43D748008A0BB2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D02E54CE1E43D748008A0BB2 /* Main.storyboard */; settings = {ASSET_TAGS = (0, ); }; };
 		D02E54D21E43D748008A0BB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D02E54D11E43D748008A0BB2 /* Assets.xcassets */; };
 		D02E54D51E43D748008A0BB2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D02E54D31E43D748008A0BB2 /* LaunchScreen.storyboard */; };
 		D02E54E01E43D748008A0BB2 /* NaturalDrawingLayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D02E54DF1E43D748008A0BB2 /* NaturalDrawingLayerTests.m */; };
 		D02E54EB1E43D748008A0BB2 /* NaturalDrawingLayerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D02E54EA1E43D748008A0BB2 /* NaturalDrawingLayerUITests.m */; };
+		D02E54F91E43D8A1008A0BB2 /* Graphics in Resources */ = {isa = PBXBuildFile; fileRef = D02E54F81E43D8A1008A0BB2 /* Graphics */; };
+		D02E54FE1E43E1AF008A0BB2 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D02E54FD1E43E1AF008A0BB2 /* Twitter.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,9 @@
 		D02E54E61E43D748008A0BB2 /* NaturalDrawingLayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NaturalDrawingLayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D02E54EA1E43D748008A0BB2 /* NaturalDrawingLayerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NaturalDrawingLayerUITests.m; sourceTree = "<group>"; };
 		D02E54EC1E43D748008A0BB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D02E54F81E43D8A1008A0BB2 /* Graphics */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Graphics; sourceTree = "<group>"; };
+		D02E54FB1E43E19F008A0BB2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D02E54FD1E43E1AF008A0BB2 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D02E54FE1E43E1AF008A0BB2 /* Twitter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +91,7 @@
 				D02E54DE1E43D748008A0BB2 /* NaturalDrawingLayerTests */,
 				D02E54E91E43D748008A0BB2 /* NaturalDrawingLayerUITests */,
 				D02E54C31E43D748008A0BB2 /* Products */,
+				D02E54FA1E43E19F008A0BB2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -117,6 +124,7 @@
 		D02E54C51E43D748008A0BB2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D02E54F81E43D8A1008A0BB2 /* Graphics */,
 				D02E54C61E43D748008A0BB2 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -138,6 +146,15 @@
 				D02E54EC1E43D748008A0BB2 /* Info.plist */,
 			);
 			path = NaturalDrawingLayerUITests;
+			sourceTree = "<group>";
+		};
+		D02E54FA1E43E19F008A0BB2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D02E54FD1E43E1AF008A0BB2 /* Twitter.framework */,
+				D02E54FB1E43E19F008A0BB2 /* UIKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,6 +219,9 @@
 		D02E54BA1E43D748008A0BB2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					0,
+				);
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Randy McLain";
 				TargetAttributes = {
@@ -250,6 +270,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D02E54D51E43D748008A0BB2 /* LaunchScreen.storyboard in Resources */,
+				D02E54F91E43D8A1008A0BB2 /* Graphics in Resources */,
 				D02E54D21E43D748008A0BB2 /* Assets.xcassets in Resources */,
 				D02E54D01E43D748008A0BB2 /* Main.storyboard in Resources */,
 			);
